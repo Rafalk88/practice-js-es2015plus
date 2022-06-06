@@ -6,7 +6,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // importuję odpowiedni plugin
 module.exports = {
-    entry: `./${taskNumber}/app.js`,
+    entry: `./01/app.js`,
     // definiuje plik wejściowy
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -34,7 +34,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: `./${taskNumber}/index.html`,
+            template: `./01/index.html`,
             // wskazuje plik źródłowy
             filename: 'index.html'
             // określan nazwę dla pliku
