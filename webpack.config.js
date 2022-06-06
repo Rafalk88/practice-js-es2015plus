@@ -1,4 +1,4 @@
-const taskNumber = null;
+const taskNumber = '02';
 //numer przerabianego zadania
 
 const path = require('path');
@@ -6,7 +6,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // importuję odpowiedni plugin
 module.exports = {
-    entry: `./01/app.js`,
+    entry: `./${taskNumber}/app.js`,
     // definiuje plik wejściowy
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -34,7 +34,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: `./01/index.html`,
+            template: `./${taskNumber}/index.html`,
             // wskazuje plik źródłowy
             filename: 'index.html'
             // określan nazwę dla pliku
